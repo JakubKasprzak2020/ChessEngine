@@ -19,17 +19,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe4e4787-e46a-4370-a4af-272c2714dbc5" name="Default Changelist" comment="Rook moves implementation passed tests.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Piece/Bishop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Piece/PieceMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Piece/BishopTest.java" afterDir="false" />
+    <list default="true" id="fe4e4787-e46a-4370-a4af-272c2714dbc5" name="Default Changelist" comment="Bishop moves implementation passed tests.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pieces/Queen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pieces/QueenTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Piece/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Piece/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Piece/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Piece/Rook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Piece/RookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Piece/RookTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Piece/Piece.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Piece/Piece.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Piece/Rook.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Piece/Rook.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Piece/RookTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Piece/RookTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Board/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Board/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Piece/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pieces/Bishop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Piece/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pieces/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Piece/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pieces/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Piece/PieceMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pieces/PieceMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Piece/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pieces/Rook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Piece/BishopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pieces/BishopTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Piece/RookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pieces/RookTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Board/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Board/Square.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Piece/Color.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Piece/Piece.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Piece/Rook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Board/ChessboardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Board/ChessboardTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Board/SquareTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Board/SquareTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Piece/RookTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +75,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="Pieces" />
       <recent name="Piece" />
       <recent name="Board" />
     </key>
@@ -74,34 +83,18 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BishopTest">
+  <component name="RunManager" selected="JUnit.QueenTest.possibleMovesWithThreeObstacles">
     <configuration name="BishopTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ChessEngine" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Piece.*" />
+          <option name="PATTERN" value="Pieces.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Piece" />
-      <option name="MAIN_CLASS_NAME" value="Piece.BishopTest" />
+      <option name="PACKAGE_NAME" value="Pieces" />
+      <option name="MAIN_CLASS_NAME" value="Pieces.BishopTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BishopTest.possibleMovesOnEmptyChessBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ChessEngine" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Piece.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Piece" />
-      <option name="MAIN_CLASS_NAME" value="Piece.BishopTest" />
-      <option name="METHOD_NAME" value="possibleMovesOnEmptyChessBoard" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -110,44 +103,60 @@
       <module name="ChessEngine" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Piece.*" />
+          <option name="PATTERN" value="Pieces.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Piece" />
-      <option name="MAIN_CLASS_NAME" value="Piece.BishopTest" />
+      <option name="PACKAGE_NAME" value="Pieces" />
+      <option name="MAIN_CLASS_NAME" value="Pieces.BishopTest" />
       <option name="METHOD_NAME" value="possibleMovesWithFourObstacles" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BishopTest.possibleMovesWithObstacles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QueenTest.possibleMovesOnEmptyChessBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ChessEngine" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Piece.*" />
+          <option name="PATTERN" value="Pieces.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Piece" />
-      <option name="MAIN_CLASS_NAME" value="Piece.BishopTest" />
-      <option name="METHOD_NAME" value="possibleMovesWithObstacles" />
+      <option name="PACKAGE_NAME" value="Pieces" />
+      <option name="MAIN_CLASS_NAME" value="Pieces.QueenTest" />
+      <option name="METHOD_NAME" value="possibleMovesOnEmptyChessBoard" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BishopTest.possibleMovesWithTwoObstacles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QueenTest.possibleMovesWithThreeObstacles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ChessEngine" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Piece.*" />
+          <option name="PATTERN" value="Pieces.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Piece" />
-      <option name="MAIN_CLASS_NAME" value="Piece.BishopTest" />
+      <option name="PACKAGE_NAME" value="Pieces" />
+      <option name="MAIN_CLASS_NAME" value="Pieces.QueenTest" />
+      <option name="METHOD_NAME" value="possibleMovesWithThreeObstacles" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueenTest.possibleMovesWithTwoObstacles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ChessEngine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Pieces.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Pieces" />
+      <option name="MAIN_CLASS_NAME" value="Pieces.QueenTest" />
       <option name="METHOD_NAME" value="possibleMovesWithTwoObstacles" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -156,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.QueenTest.possibleMovesWithThreeObstacles" />
+        <item itemvalue="JUnit.QueenTest.possibleMovesWithTwoObstacles" />
+        <item itemvalue="JUnit.QueenTest.possibleMovesOnEmptyChessBoard" />
         <item itemvalue="JUnit.BishopTest" />
         <item itemvalue="JUnit.BishopTest.possibleMovesWithFourObstacles" />
-        <item itemvalue="JUnit.BishopTest.possibleMovesWithTwoObstacles" />
-        <item itemvalue="JUnit.BishopTest.possibleMovesWithObstacles" />
-        <item itemvalue="JUnit.BishopTest.possibleMovesOnEmptyChessBoard" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597760223264</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Bishop moves implementation passed tests.">
+      <created>1597785621727</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597785621727</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,7 +223,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit. Creating classes: Square, Piece(interface), Rook, Chessboard, Square, some test classes and gitignore file." />
     <MESSAGE value="Rook moves implementation passed tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Rook moves implementation passed tests." />
+    <MESSAGE value="Bishop moves implementation passed tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="Bishop moves implementation passed tests." />
   </component>
   <component name="WindowStateProjectService">
     <state x="612" y="321" key="#VCS_History_Cache_Settings" timestamp="1597657043517">
@@ -222,10 +239,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1597652928375" />
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1597782166243">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1597789718339">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1597782166243" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1597789718339" />
     <state x="418" y="41" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597656702367">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -234,34 +251,34 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="641" y="310" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1597657623233" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1597785077205">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1597791605977">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597785077205" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1597785077204">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597791605977" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1597791605977">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597785077204" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1597785077204">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597791605977" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1597791605977">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597785077204" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1597785077205">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597791605977" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1597791605977">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597785077205" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597791605977" />
     <state x="277" y="0" key="SettingsEditor" timestamp="1597601135561">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1597601135561" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1597760251157">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1597785631700">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597760251157" />
-    <state x="576" y="162" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1597783080187">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597785631700" />
+    <state x="576" y="162" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1597790276382">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="576" y="162" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1597783080187" />
+    <state x="576" y="162" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1597790276382" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1597704403651">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -271,9 +288,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Piece/RookTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/Pieces/RookTest.java</url>
           <line>10</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Pieces/BishopTest.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

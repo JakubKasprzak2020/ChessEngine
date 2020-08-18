@@ -1,4 +1,4 @@
-package Piece;
+package Pieces;
 
 import Board.Square;
 

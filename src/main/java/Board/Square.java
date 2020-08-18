@@ -1,6 +1,6 @@
 package Board;
 
-import Piece.Piece;
+import Pieces.Piece;
 
 public class Square {
 
