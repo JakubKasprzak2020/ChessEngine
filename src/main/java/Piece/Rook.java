@@ -13,13 +13,13 @@ public class Rook implements Piece {
     private Color color;
     private Square square;
 
-    public void setColor(Color color) {
-        this.color = color;
-    }
-
     public Rook(Color color, Square square) {
         this.color = color;
         this.square = square;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
     }
 
     public Square getSquare() {
@@ -31,16 +31,20 @@ public class Rook implements Piece {
     }
 
     @Override
+    public Color getColor() {
+        return color;
+    }
+
+    @Override
     public List<Square> possibleMovesOnEmptyChessBoard(Square [][] board) {
         int x = square.getX();
         int y = square.getY();
-        List<Square> collection = Arrays.stream(board)
-                .flatMap(Arrays::stream)
-                .collect(Collectors.toList());
+        List<Square> collection = PieceMethod.listOfSquareFromMatrix(board);
         collection.removeIf(s -> (s.getX()!=x && s.getY()!=y) || (s.getX()==x && s.getY()==y));
         return collection;
     }
 
+    @Override
     public List<Square> possibleMovesWithObstacles(Square [][] board) {
         List<Square> collection = possibleMovesOnEmptyChessBoard(board);
         List<Square> copy = new ArrayList<>(collection);
@@ -68,8 +72,5 @@ public class Rook implements Piece {
         return copy;
     }
 
-    @Override
-    public Color getColor() {
-        return color;
-    }
+
 }
