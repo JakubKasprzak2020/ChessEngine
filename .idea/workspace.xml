@@ -19,12 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe4e4787-e46a-4370-a4af-272c2714dbc5" name="Default Changelist" comment="Queen moves implementation passed tests.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pieces/Knight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pieces/KnightTest.java" afterDir="false" />
+    <list default="true" id="fe4e4787-e46a-4370-a4af-272c2714dbc5" name="Default Changelist" comment="Knight moves implementation passed tests. Adding isSquareOccupiedByMyColor Method in PieceMethod Class.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pieces/King.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pieces/Pawn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pieces/KingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pieces/PawnTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pieces/PieceMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pieces/PieceMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Board/SquareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Board/SquareTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pieces/KnightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pieces/KnightTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Board/SquareTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Board/SquareTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,8 +72,8 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.KnightTest">
-    <configuration name="BishopTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PawnTest.possibleMovesOnEmptyChessBoard">
+    <configuration name="KingTest.possibleMovesOnEmptyChessBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ChessEngine" />
       <extension name="coverage">
         <pattern>
@@ -80,8 +82,41 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Pieces" />
-      <option name="MAIN_CLASS_NAME" value="Pieces.BishopTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="Pieces.KingTest" />
+      <option name="METHOD_NAME" value="possibleMovesOnEmptyChessBoard" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KingTest.possibleMovesOnEmptyChessBoardWithKingInTheCorner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ChessEngine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Pieces.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Pieces" />
+      <option name="MAIN_CLASS_NAME" value="Pieces.KingTest" />
+      <option name="METHOD_NAME" value="possibleMovesOnEmptyChessBoardWithKingInTheCorner" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KingTest.possibleMovesWithObstacles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ChessEngine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Pieces.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Pieces" />
+      <option name="MAIN_CLASS_NAME" value="Pieces.KingTest" />
+      <option name="METHOD_NAME" value="possibleMovesWithObstacles" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -101,7 +136,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KnightTest.possibleMovesWithFiveObstacles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PawnTest.possibleMovesOnEmptyChessBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ChessEngine" />
       <extension name="coverage">
         <pattern>
@@ -110,39 +145,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Pieces" />
-      <option name="MAIN_CLASS_NAME" value="Pieces.KnightTest" />
-      <option name="METHOD_NAME" value="possibleMovesWithFiveObstacles" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ChessEngine" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Pieces.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Pieces" />
-      <option name="MAIN_CLASS_NAME" value="Pieces.RookTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SquareTest.isOccupy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ChessEngine" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Board.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Board" />
-      <option name="MAIN_CLASS_NAME" value="Board.SquareTest" />
-      <option name="METHOD_NAME" value="isOccupy" />
+      <option name="MAIN_CLASS_NAME" value="Pieces.PawnTest" />
+      <option name="METHOD_NAME" value="possibleMovesOnEmptyChessBoard" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -150,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PawnTest.possibleMovesOnEmptyChessBoard" />
+        <item itemvalue="JUnit.KingTest.possibleMovesWithObstacles" />
+        <item itemvalue="JUnit.KingTest.possibleMovesOnEmptyChessBoardWithKingInTheCorner" />
+        <item itemvalue="JUnit.KingTest.possibleMovesOnEmptyChessBoard" />
         <item itemvalue="JUnit.KnightTest" />
-        <item itemvalue="JUnit.RookTest" />
-        <item itemvalue="JUnit.BishopTest" />
-        <item itemvalue="JUnit.KnightTest.possibleMovesWithFiveObstacles" />
-        <item itemvalue="JUnit.SquareTest.isOccupy" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597791921270</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Knight moves implementation passed tests. Adding isSquareOccupiedByMyColor Method in PieceMethod Class.">
+      <created>1597847097473</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1597847097473</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,7 +228,8 @@
     <MESSAGE value="Rook moves implementation passed tests." />
     <MESSAGE value="Bishop moves implementation passed tests." />
     <MESSAGE value="Queen moves implementation passed tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Queen moves implementation passed tests." />
+    <MESSAGE value="Knight moves implementation passed tests. Adding isSquareOccupiedByMyColor Method in PieceMethod Class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Knight moves implementation passed tests. Adding isSquareOccupiedByMyColor Method in PieceMethod Class." />
   </component>
   <component name="WindowStateProjectService">
     <state x="612" y="321" key="#VCS_History_Cache_Settings" timestamp="1597657043517">
@@ -232,10 +244,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1597652928375" />
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1597842353468">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1597869265451">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1597842353468" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1597869265451" />
     <state x="418" y="41" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597656702367">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -244,54 +256,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="641" y="310" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1597657623233" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1597846623976">
+    <state width="1493" height="188" key="GridCell.Tab.0.bottom" timestamp="1597871383139">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597846623976" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1597846623974">
+    <state width="1493" height="188" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597871383139" />
+    <state width="1493" height="188" key="GridCell.Tab.0.center" timestamp="1597871383139">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597846623974" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1597846623974">
+    <state width="1493" height="188" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1597871383139" />
+    <state width="1493" height="188" key="GridCell.Tab.0.left" timestamp="1597871383139">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597846623974" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1597846623976">
+    <state width="1493" height="188" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1597871383139" />
+    <state width="1493" height="188" key="GridCell.Tab.0.right" timestamp="1597871383139">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597846623976" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1597846623976">
+    <state width="1493" height="188" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1597871383139" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1597847622162">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597846623976" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1597846623976">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597847622162" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1597847622162">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1597846623976" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1597846623976">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1597847622162" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1597847622162">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1597846623976" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1597846623976">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1597847622162" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1597847622162">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1597846623976" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1597847622162" />
     <state x="277" y="0" key="SettingsEditor" timestamp="1597601135561">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1597601135561" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1597792011205">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1597847126126">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597792011205" />
-    <state x="576" y="162" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1597842979661">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597847126126" />
+    <state x="576" y="162" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1597870271436">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="576" y="162" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1597842979661" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1597704403651">
+    <state x="576" y="162" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1597870271436" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1597869669669">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1597704403651" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1597869669669" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -316,11 +328,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/Pieces/KnightTest.java</url>
-          <line>68</line>
+          <line>64</line>
           <properties class="Pieces.KnightTest" method="possibleMovesWithFiveObstacles">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/Pieces/PawnTest.java</url>
+          <line>13</line>
+          <properties class="Pieces.PawnTest" method="possibleMovesOnEmptyChessBoard">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

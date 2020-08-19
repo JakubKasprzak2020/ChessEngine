@@ -40,10 +40,6 @@ class KnightTest {
         assertEquals(expected, actual);
     }
 
-
-
-
-
     @Test
     void possibleMovesWithObstacles() {
         //given
