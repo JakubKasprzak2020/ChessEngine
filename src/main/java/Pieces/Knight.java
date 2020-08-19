@@ -6,12 +6,12 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Bishop implements Piece {
+public class Knight implements Piece {
 
     private Color color;
     private Square square;
 
-    public Bishop(Color color, Square square) {
+    public Knight(Color color, Square square) {
         this.color = color;
         this.square = square;
     }
@@ -33,14 +33,19 @@ public class Bishop implements Piece {
         return color;
     }
 
-
     @Override
     public List<Square> possibleMovesOnEmptyChessBoard(Square[][] board) {
         int x = square.getX();
         int y = square.getY();
         List<Square> collection = PieceMethod.listOfSquareFromMatrix(board);
-        collection.removeIf(s -> (s.getX() - s.getY() != x - y && s.getX() + s.getY() != x + y)
-                || (s.getX() == x && s.getY() == y));
+        collection.removeIf(s -> (s.getX() != x+2 || s.getY() != y-1) &&
+                        (s.getX() != x+2 || s.getY() != y+1) &&
+                        (s.getX() != x-2 || s.getY() != y-1) &&
+                        (s.getX() != x-2 || s.getY() != y+1) &&
+                        (s.getX() != x-1 || s.getY() != y-2) &&
+                        (s.getX() != x-1 || s.getY() != y+2) &&
+                        (s.getX() != x+1 || s.getY() != y-2) &&
+                        (s.getX() != x+1 || s.getY() != y+2));
         return collection;
     }
 
@@ -51,20 +56,6 @@ public class Bishop implements Piece {
         Iterator<Square> it = collection.iterator();
         while (it.hasNext()){
             Square next = it.next();
-            if (next.isOccupy() && next.getX() + next.getY() == square.getX() + square.getY()){
-                if (next.getY() > square.getY()){
-                    copy.removeIf(sq -> sq.getY()>next.getY() && sq.getY()+sq.getX() == next.getY()+next.getX());
-                } else {
-                    copy.removeIf(sq -> sq.getY()<next.getY() && sq.getY()+sq.getX() == next.getY()+next.getX());
-                }
-            }
-            if (next.isOccupy() && next.getX() - next.getY() == square.getX() - square.getY()){
-                if (next.getX() > square.getX()){
-                    copy.removeIf(sq -> sq.getX()>next.getX() && sq.getY()-sq.getX() == next.getY()-next.getX());
-                } else {
-                    copy.removeIf(sq -> sq.getX()<next.getX() && sq.getY()-sq.getX() == next.getY()-next.getX());
-                }
-            }
             if (PieceMethod.isSquareOccupiedByMyColor(next, color)){
                 copy.remove(next);
             }

@@ -63,7 +63,7 @@ public class Rook implements Piece {
                         copy.removeIf(sq -> sq.getX()<next.getX());
                     }
                 }
-                if (next.isOccupy() && next.getPiece().getColor().equals(color)){
+                if (PieceMethod.isSquareOccupiedByMyColor(next, color)){
                     copy.remove(next);
                 }
             }

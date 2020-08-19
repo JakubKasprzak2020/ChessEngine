@@ -1,10 +1,26 @@
 package Board;
 
+import Pieces.Piece;
+import Pieces.Rook;
 import org.junit.jupiter.api.Test;
 
+import static Pieces.Color.BLACK;
 import static org.junit.jupiter.api.Assertions.*;
 
 class SquareTest {
+
+    @Test
+    void isOccupy() {
+        //given
+        Square square1 = new Square(3,3,null);
+        Square square2 = new Square(0,0,null);
+        Piece rook = new Rook(BLACK, square2);
+        //when
+        square2.setPiece(rook);
+        //then
+        assertEquals(square1.isOccupy(), false);
+        assertEquals(square2.isOccupy(), true);
+    }
 
     @Test
     void testToString() {
