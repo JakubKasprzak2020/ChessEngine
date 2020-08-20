@@ -49,21 +49,21 @@ public class Rook implements Piece {
         Iterator <Square> it = collection.iterator();
             while (it.hasNext()){
                 Square next = it.next();
-                if (next.isOccupy() && next.getX() == square.getX()){
+                if (next.isOccupied() && next.getX() == square.getX()){
                     if (next.getY() > square.getY()){
                         copy.removeIf(sq -> sq.getY()>next.getY());
                     } else {
                         copy.removeIf(sq -> sq.getY()<next.getY());
                     }
                 }
-                if (next.isOccupy() && next.getY() == square.getY()){
+                if (next.isOccupied() && next.getY() == square.getY()){
                     if (next.getX() > square.getX()){
                         copy.removeIf(sq -> sq.getX()>next.getX());
                     } else {
                         copy.removeIf(sq -> sq.getX()<next.getX());
                     }
                 }
-                if (PieceMethod.isSquareOccupiedByMyColor(next, color)){
+                if (next.isOccupiedByColor(color)){
                     copy.remove(next);
                 }
             }

@@ -5,12 +5,13 @@ import Pieces.Rook;
 import org.junit.jupiter.api.Test;
 
 import static Pieces.Color.BLACK;
+import static Pieces.Color.WHITE;
 import static org.junit.jupiter.api.Assertions.*;
 
 class SquareTest {
 
     @Test
-    void isOccupy() {
+    void isOccupied() {
         //given
         Square square1 = new Square(3,3,null);
         Square square2 = new Square(0,0,null);
@@ -18,8 +19,25 @@ class SquareTest {
         //when
         square2.setPiece(rook);
         //then
-        assertEquals(square1.isOccupy(), false);
-        assertEquals(square2.isOccupy(), true);
+        assertFalse(square1.isOccupied());
+        assertTrue(square2.isOccupied());
+    }
+
+    @Test
+    void isOccupiedByColor(){
+        //given
+        Square square1 = new Square(0,0,null);
+        Square square2 = new Square(1,1,null);
+        Square square3 = new Square(2,2,null);
+        Piece rook1 = new Rook(BLACK, square2);
+        Piece rook2 = new Rook(WHITE, square3);
+        //when
+        square2.setPiece(rook1);
+        square3.setPiece(rook2);
+        //then
+        assertFalse(square1.isOccupiedByColor(WHITE));
+        assertFalse(square2.isOccupiedByColor(WHITE));
+        assertTrue(square3.isOccupiedByColor(WHITE));
     }
 
     @Test

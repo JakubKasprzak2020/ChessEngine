@@ -2,6 +2,8 @@ package Pieces;
 
 import Board.Square;
 
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Pawn implements Piece {
@@ -50,7 +52,49 @@ public class Pawn implements Piece {
 
     @Override
     public List<Square> possibleMovesWithObstacles(Square[][] board) {
-        return null;
+        List<Square> collection = possibleMovesOnEmptyChessBoard(board);
+        List<Square> copy = new ArrayList<>(collection);
+        Iterator<Square> it = collection.iterator();
+        while (it.hasNext()){
+            Square next = it.next();
+            if (next.isOccupied()){
+                copy.remove(next);
+            }
+        }
+
+        int x = square.getX();
+        int y = square.getY();
+
+        if (color == Color.WHITE && x != 0) {
+            Square leftSquareforWhite = board[x - 1][y + 1];
+            if (leftSquareforWhite.isOccupiedByColor(Color.BLACK)) {
+                copy.add(leftSquareforWhite);
+            }
+        }
+
+        if (color == Color.WHITE && x != 7) {
+            Square rightSquareforWhite = board[x + 1][y + 1];
+            if (rightSquareforWhite.isOccupiedByColor(Color.BLACK)) {
+                copy.add(rightSquareforWhite);
+            }
+        }
+
+        if (color == Color.BLACK && x != 0){
+            Square leftSquareforBlack = board [x-1][y-1];
+            if (leftSquareforBlack.isOccupiedByColor(Color.WHITE)) {
+                copy.add(leftSquareforBlack);
+            }
+        }
+
+        if (color == Color.BLACK && x != 7) {
+            Square rightSquareforBlack = board[x + 1][y - 1];
+            if (rightSquareforBlack.isOccupiedByColor(Color.WHITE)) {
+                copy.add(rightSquareforBlack);
+            }
+        }
+
+
+        return copy;
     }
 
 

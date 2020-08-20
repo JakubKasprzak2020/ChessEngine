@@ -1,5 +1,6 @@
 package Board;
 
+import Pieces.Color;
 import Pieces.Piece;
 
 public class Square {
@@ -41,13 +42,19 @@ public class Square {
         this.piece = piece;
     }
 
-        public boolean isOccupy(){
+        public boolean isOccupied(){
         if (piece == null){
             return false;
         } return true;
     }
 
 
+    public boolean isOccupiedByColor(Color color ) {
+        if (!isOccupied()) {
+            return false;
+        }
+        return getPiece().getColor().equals(color);
+    }
 
 
     @Override

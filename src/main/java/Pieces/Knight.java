@@ -56,7 +56,7 @@ public class Knight implements Piece {
         Iterator<Square> it = collection.iterator();
         while (it.hasNext()){
             Square next = it.next();
-            if (PieceMethod.isSquareOccupiedByMyColor(next, color)){
+            if (next.isOccupiedByColor(color)){
                 copy.remove(next);
             }
         }

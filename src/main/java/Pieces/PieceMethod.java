@@ -18,11 +18,7 @@ public class PieceMethod {
 
 
 
-    public static boolean isSquareOccupiedByMyColor(Square square, Color color ) {
-        if (!square.isOccupy()) {
-            return false;
-        }
-        return square.getPiece().getColor().equals(color);
-    }
+
+
 
 }

@@ -51,21 +51,21 @@ public class Bishop implements Piece {
         Iterator<Square> it = collection.iterator();
         while (it.hasNext()){
             Square next = it.next();
-            if (next.isOccupy() && next.getX() + next.getY() == square.getX() + square.getY()){
+            if (next.isOccupied() && next.getX() + next.getY() == square.getX() + square.getY()){
                 if (next.getY() > square.getY()){
                     copy.removeIf(sq -> sq.getY()>next.getY() && sq.getY()+sq.getX() == next.getY()+next.getX());
                 } else {
                     copy.removeIf(sq -> sq.getY()<next.getY() && sq.getY()+sq.getX() == next.getY()+next.getX());
                 }
             }
-            if (next.isOccupy() && next.getX() - next.getY() == square.getX() - square.getY()){
+            if (next.isOccupied() && next.getX() - next.getY() == square.getX() - square.getY()){
                 if (next.getX() > square.getX()){
                     copy.removeIf(sq -> sq.getX()>next.getX() && sq.getY()-sq.getX() == next.getY()-next.getX());
                 } else {
                     copy.removeIf(sq -> sq.getX()<next.getX() && sq.getY()-sq.getX() == next.getY()-next.getX());
                 }
             }
-            if (PieceMethod.isSquareOccupiedByMyColor(next, color)){
+            if (next.isOccupiedByColor(color)){
                 copy.remove(next);
             }
         }
