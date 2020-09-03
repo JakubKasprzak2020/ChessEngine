@@ -9,6 +9,8 @@ public interface Piece {
     public List<Square> possibleMovesOnEmptyChessBoard(Square [][] board);
     public List<Square> possibleMovesWithObstacles(Square[][] board);
     public Color getColor();
+    public Square getSquare();
+    public void setSquare(Square square);
 
 
 }
