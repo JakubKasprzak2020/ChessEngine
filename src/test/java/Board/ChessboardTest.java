@@ -10,7 +10,7 @@ class ChessboardTest {
     void getChessboard() {
         //given
         Chessboard board = new Chessboard();
-        Square [][] chessboard = board.getChessboard();
+        Square [][] chessboard = board.getBoard();
         //when
         Square testSquare = new Square(5,5,null);
         Square secondTestSquare = new Square(3,7,null);

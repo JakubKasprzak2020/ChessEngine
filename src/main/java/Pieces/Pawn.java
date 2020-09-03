@@ -99,3 +99,6 @@ public class Pawn implements Piece {
 
 
 }
+
+
+//trzeba zablokować możliwość robienia ruchu pionkami na pola przemiany i wrzucić to do kategorii ruchów specjalnych

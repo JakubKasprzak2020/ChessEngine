@@ -14,7 +14,7 @@ class RookTest {
     void possibleMovesOnEmptyChessBoard() {
         //given
         Chessboard board = new Chessboard();
-        Square[][] chessboard = board.getChessboard();
+        Square[][] chessboard = board.getBoard();
         Square square = chessboard[0][0];
         Piece rook = new Rook(Color.WHITE, square);
         //when
@@ -29,7 +29,7 @@ class RookTest {
     void possibleMovesWithObstacles() {
         //given
         Chessboard board = new Chessboard();
-        Square[][] chessboard = board.getChessboard();
+        Square[][] chessboard = board.getBoard();
         Square square1 = chessboard[0][0];
         Square square2 = chessboard[0][1];
         Piece rook1 = new Rook(Color.WHITE, square1);
@@ -47,7 +47,7 @@ class RookTest {
     void possibleMovesWithTwoObstacles() {
         //given
         Chessboard board = new Chessboard();
-        Square[][] chessboard = board.getChessboard();
+        Square[][] chessboard = board.getBoard();
         Square square1 = chessboard[4][0];
         Square square2 = chessboard[3][0];
         Square square3 = chessboard[5][0];
@@ -68,7 +68,7 @@ class RookTest {
     void possibleMovesWithFourObstacles() {
         //given
         Chessboard board = new Chessboard();
-        Square[][] chessboard = board.getChessboard();
+        Square[][] chessboard = board.getBoard();
         Square square1 = chessboard[4][5]; // E6
         Square square2 = chessboard[4][3]; // E4
         Square square3 = chessboard[4][7]; // E8

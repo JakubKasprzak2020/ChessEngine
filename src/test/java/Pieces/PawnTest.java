@@ -14,7 +14,7 @@ class PawnTest {
     void possibleMovesOnEmptyChessBoard() {
         //given
         Chessboard board = new Chessboard();
-        Square[][] chessboard = board.getChessboard();
+        Square[][] chessboard = board.getBoard();
         Square square1 = chessboard[0][1]; //A2
         Square square2 = chessboard[4][4]; //E5
         Square square3 = chessboard[5][6]; //F7
@@ -49,7 +49,7 @@ class PawnTest {
     void possibleMovesWithObstacles() {
         //given
         Chessboard board = new Chessboard();
-        Square[][] chessboard = board.getChessboard();
+        Square[][] chessboard = board.getBoard();
         Square square1 = chessboard[0][1]; //A2
         Square square2 = chessboard[0][3]; //A4
         Square square3 = chessboard[5][6]; //F7
@@ -94,7 +94,7 @@ class PawnTest {
     void possibleMovesWithCaptures() {
         //given
         Chessboard board = new Chessboard();
-        Square[][] chessboard = board.getChessboard();
+        Square[][] chessboard = board.getBoard();
         Square square1 = chessboard[0][1]; //A2
         Square square2 = chessboard[1][2]; //B3
         Square square3 = chessboard[5][6]; //F7

@@ -14,7 +14,7 @@ class KingTest {
     void possibleMovesOnEmptyChessBoard() {
         //given
         Chessboard board = new Chessboard();
-        Square[][] chessboard = board.getChessboard();
+        Square[][] chessboard = board.getBoard();
         Square square = chessboard[4][4]; //E5
         Piece king = new King(Color.WHITE, square);
         //when
@@ -29,7 +29,7 @@ class KingTest {
     void possibleMovesOnEmptyChessBoardWithKingInTheCorner() {
         //given
         Chessboard board = new Chessboard();
-        Square[][] chessboard = board.getChessboard();
+        Square[][] chessboard = board.getBoard();
         Square square = chessboard[7][0]; //H1
         Piece king = new King(Color.WHITE, square);
         //when
@@ -46,7 +46,7 @@ class KingTest {
     void possibleMovesWithObstacles() {
         //given
         Chessboard board = new Chessboard();
-        Square[][] chessboard = board.getChessboard();
+        Square[][] chessboard = board.getBoard();
         Square square1 = chessboard[3][2]; //D3
         Square square2 = chessboard[2][2]; //C3
         Square square3 = chessboard[4][3]; //E4

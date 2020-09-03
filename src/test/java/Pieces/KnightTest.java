@@ -14,7 +14,7 @@ class KnightTest {
     void possibleMovesOnEmptyChessBoard() {
         //given
         Chessboard board = new Chessboard();
-        Square[][] chessboard = board.getChessboard();
+        Square[][] chessboard = board.getBoard();
         Square square = chessboard[3][3];
         Piece knight = new Knight(Color.WHITE, square);
         //when
@@ -29,7 +29,7 @@ class KnightTest {
     void possibleMovesOnEmptyChessBoardWithKnightInTheCorner() {
         //given
         Chessboard board = new Chessboard();
-        Square[][] chessboard = board.getChessboard();
+        Square[][] chessboard = board.getBoard();
         Square square = chessboard[0][0];
         Piece knight = new Knight(Color.WHITE, square);
         //when
@@ -44,7 +44,7 @@ class KnightTest {
     void possibleMovesWithObstacles() {
         //given
         Chessboard board = new Chessboard();
-        Square[][] chessboard = board.getChessboard();
+        Square[][] chessboard = board.getBoard();
         Square square1 = chessboard[7][7]; //H8
         Square square2 = chessboard[5][6]; //F7
         Square square3 = chessboard[6][5]; //G6
@@ -65,7 +65,7 @@ class KnightTest {
     void possibleMovesWithFiveObstacles() {
         //given
         Chessboard board = new Chessboard();
-        Square[][] chessboard = board.getChessboard();
+        Square[][] chessboard = board.getBoard();
         Square square1 = chessboard[3][3]; //D4
         Square square2 = chessboard[1][2]; //B3
         Square square3 = chessboard[4][5]; //E6

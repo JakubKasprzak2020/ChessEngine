@@ -14,7 +14,7 @@ class BishopTest {
     void possibleMovesOnEmptyChessBoard() {
         //given
         Chessboard board = new Chessboard();
-        Square[][] chessboard = board.getChessboard();
+        Square[][] chessboard = board.getBoard();
         Square square = chessboard[3][3];
         Piece bishop = new Bishop(Color.BLACK, square);
         //when
@@ -29,7 +29,7 @@ class BishopTest {
     void possibleMovesWithObstacles() {
         //given
         Chessboard board = new Chessboard();
-        Square[][] chessboard = board.getChessboard();
+        Square[][] chessboard = board.getBoard();
         Square square1 = chessboard[0][0];
         Square square2 = chessboard[2][2];
         Piece bishop = new Bishop(Color.WHITE, square1);
@@ -47,7 +47,7 @@ class BishopTest {
     void possibleMovesWithTwoObstacles() {
         //given
         Chessboard board = new Chessboard();
-        Square[][] chessboard = board.getChessboard();
+        Square[][] chessboard = board.getBoard();
         Square square1 = chessboard[5][3]; //F4
         Square square2 = chessboard[4][2]; //E3
         Square square3 = chessboard[4][4]; //E5
@@ -68,7 +68,7 @@ class BishopTest {
     void possibleMovesWithFourObstacles() {
         //given
         Chessboard board = new Chessboard();
-        Square[][] chessboard = board.getChessboard();
+        Square[][] chessboard = board.getBoard();
         Square square1 = chessboard[2][4]; //C5
         Square square2 = chessboard[0][2]; //A3
         Square square3 = chessboard[4][6]; //E7

@@ -4,9 +4,7 @@ import Board.Chessboard;
 import Board.Square;
 import org.junit.jupiter.api.Test;
 
-import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -16,7 +14,7 @@ class QueenTest {
     void possibleMovesOnEmptyChessBoard() {
         //given
         Chessboard board = new Chessboard();
-        Square[][] chessboard = board.getChessboard();
+        Square[][] chessboard = board.getBoard();
         Square square = chessboard[0][7]; //A8
         Piece queen = new Queen(Color.WHITE, square);
         //when
@@ -31,7 +29,7 @@ class QueenTest {
     void possibleMovesWithTwoObstacles() {
         //given
         Chessboard board = new Chessboard();
-        Square[][] chessboard = board.getChessboard();
+        Square[][] chessboard = board.getBoard();
         Square square1 = chessboard[0][7]; //A8
         Square square2 = chessboard[6][7]; //G8
         Square square3 = chessboard[3][4]; //D5
@@ -53,7 +51,7 @@ class QueenTest {
     void possibleMovesWithThreeObstacles() {
         //given
         Chessboard board = new Chessboard();
-        Square[][] chessboard = board.getChessboard();
+        Square[][] chessboard = board.getBoard();
         Square square1 = chessboard[0][0]; //A1
         Square square2 = chessboard[0][1]; //A2
         Square square3 = chessboard[1][0]; //B1

@@ -65,3 +65,6 @@ public class Square {
         return letter + number;
     }
 }
+
+
+// Chyba przyda się metoda odwrotna do toString - pole ze Stringa - zobaczymy
