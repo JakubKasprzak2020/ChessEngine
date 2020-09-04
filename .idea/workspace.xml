@@ -19,18 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe4e4787-e46a-4370-a4af-272c2714dbc5" name="Default Changelist" comment="Add PieceMethodTest, and some addnotation.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Moves/Castling.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Moves/EnPassant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Moves/Move.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Moves/MovesFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Moves/Promotion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Moves/StandardMove.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Moves/MovesFinderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Moves/StandardMoveTest.java" afterDir="false" />
+    <list default="true" id="fe4e4787-e46a-4370-a4af-272c2714dbc5" name="Default Changelist" comment="Add Moves Package with some basics idea in StandardMove class and MovesFinder class. Also tests were made.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Moves/ShortCastlingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pieces/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pieces/Piece.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pieces/Piece.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Moves/Castling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Moves/ShortCastling.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,22 +73,7 @@
       <recent name="C:\Users\losu5\IdeaProjects\ChessEngine\src\main" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MovesFinderTest.findMovesOfPieceWithOnePosibility">
-    <configuration name="ChessboardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ChessEngine" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Board.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Board" />
-      <option name="MAIN_CLASS_NAME" value="Board.ChessboardTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ShortCastlingTest">
     <configuration name="MovesFinderTest.findMovesOfPieceWithOnePosibility" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ChessEngine" />
       <extension name="coverage">
@@ -113,33 +90,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PieceMethodTest.listOfSquareFromMatrix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShortCastlingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ChessEngine" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Pieces.*" />
+          <option name="PATTERN" value="Moves.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Pieces" />
-      <option name="MAIN_CLASS_NAME" value="Pieces.PieceMethodTest" />
-      <option name="METHOD_NAME" value="listOfSquareFromMatrix" />
+      <option name="PACKAGE_NAME" value="Moves" />
+      <option name="MAIN_CLASS_NAME" value="Moves.ShortCastlingTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShortCastlingTest.shortCastlingForBlack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ChessEngine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Moves.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Moves" />
+      <option name="MAIN_CLASS_NAME" value="Moves.ShortCastlingTest" />
+      <option name="METHOD_NAME" value="shortCastlingForBlack" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SquareTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShortCastlingTest.shortCastlingForWhite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ChessEngine" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Board.*" />
+          <option name="PATTERN" value="Moves.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Board" />
-      <option name="MAIN_CLASS_NAME" value="Board.SquareTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="Moves" />
+      <option name="MAIN_CLASS_NAME" value="Moves.ShortCastlingTest" />
+      <option name="METHOD_NAME" value="shortCastlingForWhite" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -162,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ShortCastlingTest" />
+        <item itemvalue="JUnit.ShortCastlingTest.shortCastlingForBlack" />
+        <item itemvalue="JUnit.ShortCastlingTest.shortCastlingForWhite" />
         <item itemvalue="JUnit.MovesFinderTest.findMovesOfPieceWithOnePosibility" />
         <item itemvalue="JUnit.StandardMoveTest.makeMove" />
-        <item itemvalue="JUnit.PieceMethodTest.listOfSquareFromMatrix" />
-        <item itemvalue="JUnit.SquareTest" />
-        <item itemvalue="JUnit.ChessboardTest" />
       </list>
     </recent_temporary>
   </component>
@@ -237,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599141777533</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add Moves Package with some basics idea in StandardMove class and MovesFinder class. Also tests were made.">
+      <created>1599161621466</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1599161621468</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -261,7 +261,8 @@
     <MESSAGE value="King moves implementation passed tests. Pawn moves implementation for empty board moves also passed tests." />
     <MESSAGE value="Pawn moves implementation passed tests. Basic moves are completed." />
     <MESSAGE value="Add PieceMethodTest, and some addnotation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add PieceMethodTest, and some addnotation." />
+    <MESSAGE value="Add Moves Package with some basics idea in StandardMove class and MovesFinder class. Also tests were made." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Moves Package with some basics idea in StandardMove class and MovesFinder class. Also tests were made." />
   </component>
   <component name="WindowStateProjectService">
     <state x="535" y="117" key="#Auto_Import" timestamp="1599159268190">
@@ -280,10 +281,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1597652928375" />
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1599157333749">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1599204552562">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1599157333749" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1599204552562" />
     <state x="418" y="41" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597656702367">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -292,22 +293,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="641" y="310" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1597657623233" />
-    <state width="1493" height="188" key="GridCell.Tab.0.bottom" timestamp="1599161481363">
+    <state width="1493" height="188" key="GridCell.Tab.0.bottom" timestamp="1599162076959">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="188" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599161481363" />
-    <state width="1493" height="188" key="GridCell.Tab.0.center" timestamp="1599161481363">
+    <state width="1493" height="188" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599162076959" />
+    <state width="1493" height="188" key="GridCell.Tab.0.center" timestamp="1599162076959">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="188" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599161481363" />
-    <state width="1493" height="188" key="GridCell.Tab.0.left" timestamp="1599161481363">
+    <state width="1493" height="188" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599162076959" />
+    <state width="1493" height="188" key="GridCell.Tab.0.left" timestamp="1599162076959">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="188" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599161481363" />
-    <state width="1493" height="188" key="GridCell.Tab.0.right" timestamp="1599161481363">
+    <state width="1493" height="188" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599162076959" />
+    <state width="1493" height="188" key="GridCell.Tab.0.right" timestamp="1599162076959">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="188" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599161481363" />
+    <state width="1493" height="188" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599162076959" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1597847622162">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -332,10 +333,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597939331274" />
-    <state x="576" y="162" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1599160413324">
+    <state x="576" y="162" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1599205886236">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="576" y="162" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1599160413324" />
+    <state x="576" y="162" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1599205886236" />
     <state x="418" y="87" key="new project wizard" timestamp="1598691597647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
